@@ -1,0 +1,25 @@
+.section-gallery{
+    padding-top: 0;
+}
+
+.gallery-item {
+    position: relative;
+
+
+ &__img{
+    display: block;
+ }
+
+ &__text{
+    position: absolute;
+    bottom: 0;
+
+    width: 100%;
+    padding: 27px 5px;
+
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--white-color);
+    background-color: var(--color-gradient);
+ }
+}

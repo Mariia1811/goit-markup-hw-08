@@ -1,0 +1,25 @@
+.section__bg-cover{
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 200px 0px;
+
+    background-image: linear-gradient(var(--color-gradient), var(--color-gradient)), url("../images/bgimage.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.hero-title{
+    max-width: 696px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+
+    font-weight: 900;
+    font-size: 44px;
+    letter-spacing: 0.06em;
+    line-height: 1.366; 
+    text-transform: uppercase;
+    color: var(--white-color);
+}

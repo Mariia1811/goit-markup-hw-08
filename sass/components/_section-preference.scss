@@ -1,0 +1,29 @@
+
+.preference-item {
+    max-width: 270px;
+    text-align: left;
+}
+
+.preference-img {
+    display: flex;
+    justify-content: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin-bottom: 30px;
+    background-color: var(--color-section);
+}
+
+.preference-icon {
+    width: 70px;
+    height: 70px;
+}
+
+.preference-title {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.preference-text {
+    line-height: 1.71;
+    color: var(--text-color);
+}
