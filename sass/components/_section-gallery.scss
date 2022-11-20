@@ -1,14 +1,10 @@
 .section-gallery{
     padding-top: 0;
+    display: none;
 }
 
 .gallery-item {
     position: relative;
-
-
- &__img{
-    display: block;
- }
 
  &__text{
     position: absolute;
@@ -23,3 +19,8 @@
     background-color: var(--color-gradient);
  }
 }
+ @media screen and (min-width:1200px) {
+    .section-gallery{
+        display: block;
+    }
+ }

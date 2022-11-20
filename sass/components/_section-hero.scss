@@ -1,25 +1,71 @@
 .section__bg-cover{
-    max-width: 1600px;
+    max-width: 480px;
     margin-left: auto;
     margin-right: auto;
-    padding: 200px 0px;
+    padding: 118px 0px;
 
-    background-image: linear-gradient(var(--color-gradient), var(--color-gradient)), url("../images/bgimage.jpg");
+    background-image: linear-gradient(var(--color-gradient), var(--color-gradient)), url("../images/bgimage-480.jpg");
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: inherit;
     background-size: cover;
+   
+    @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+            .section__bg-cover {
+                background-image: linear-gradient(var(--color-gradient), var(--color-gradient)), url("../images/bgimage-480@2x.jpg");
+            }
+        }
+}
+
+@media screen and (min-width:768px) {
+    .section__bg-cover {
+            max-width: 768px;
+            background-image: linear-gradient(var(--color-gradient), var(--color-gradient)), url("../images/bgimage-768.jpg");
+        }
+    
+    @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+            .section__bg-cover {
+                background-image: linear-gradient(var(--color-gradient), var(--color-gradient)), url("../images/bgimage-768@2x.jpg");
+            }
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .section__bg-cover {
+        max-width: 1600px;
+        padding: 200px 0;
+         background-image:linear-gradient(var(--color-gradient), var(--color-gradient)), url("../images/bgimage-1600.jpg");
+     }
+
+    @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        .section__bg-cover {
+             background-image:linear-gradient(var(--color-gradient), var(--color-gradient)), url("../images/bgimage-1600@2x.jpg");
+        }
+    }
 }
 
 .hero-title{
-    max-width: 696px;
+    display: block;
     margin-bottom: 30px;
     margin-left: auto;
     margin-right: auto;
 
     font-weight: 900;
-    font-size: 44px;
+    font-size: 26px;
+    line-height: 1.62;
     letter-spacing: 0.06em;
-    line-height: 1.366; 
     text-transform: uppercase;
     color: var(--white-color);
+}
+
+@media screen and (min-width:1200px) {
+  .hero-title{
+   font-size: 44px;
+   line-height: 1.366;  
+ } 
 }

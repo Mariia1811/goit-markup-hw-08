@@ -1,10 +1,10 @@
 .logo {
-    display: inline-block;
+    display: block;
 
     font-family: var(--font-logo);
     font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
+    font-size: 24px;
+    line-height: 1.16;
 
     color: var(--text-logo);
     text-decoration: none;
@@ -13,6 +13,22 @@
     color: var(--accent-color);
 }
 }
+@media screen and (max-width: 480px){
+.logo:hover,
+.logo:focus {
+        color: var(--accent-color);
+    }
+}
+
+
+@media screen and (min-width: 1200px) {
+    .logo {
+        font-size: 26px;
+        line-height: 1.19;
+    }
+   
+}
+ 
 
 .header__logo {
     margin-right: 93px;

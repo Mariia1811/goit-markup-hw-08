@@ -1,13 +1,15 @@
 .socials {
     display: flex;
     justify-content: space-between;
-    min-width: 206px;
+    width: 206px;
     gap: 10px;
 }
 
 .socials__link {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+    
     width: 44px;
     height: 44px;
     align-items: center;

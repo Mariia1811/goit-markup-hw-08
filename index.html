@@ -14,40 +14,51 @@
     <!--Шапка сайту-->
     <header class="header">
         <div class="container header__container">
-            <div class="header-wrap">
+            
+            <a class="logo header__logo" href="./index.html"><span class="logo__el-web">Web</span>Studio</a>
 
-            <a class="logo header__logo" href="./index.html">
-                <span class="logo__el-web">Web</span>Studio
-            </a>
+                 <button type="button" class="menu-btn" aria-controls="mobile-menu" aria-expanded="false" aria-controls="menu-container" data-menu-button>
+                     <svg class="mob-menu-icon"aria-label="Переключатель мобильного меню">
+                         <use class="icon-close" href="./images/icons.svg#icon-close-black"></use>
+                         <use class="icon-menu" href="./images/icons.svg#icon-menu"></use>
+                     </svg>
+                </button>
 
-            <nav class="page-nav">
-                <ul class="page-nav__list">
-                    <li class="page-nav__item">
-                        <a href="./index.html" class="page-nav__link page-nav__link--current">Студія</a>
-                    </li>
-                    <li class="page-nav__item"> 
-                        <a href="./portfolio.html" class="page-nav__link">Портфоліо</a>
-                    </li>
-                    <li class="page-nav__item"> 
-                        <a href="" class="page-nav__link">Контакти</a>
-                    </li>
-                </ul>
-            </nav>
-
-        </div>
-
-            <div class="header-wrap">
+                <div class="mobile-menu" id="mobile-menu" data-menu>
+                <nav class="page-nav">
+                     <ul class="page-nav__list">
+                         <li class="page-nav__item">
+                             <a href="./index.html" class="page-nav__link page-nav__link--current">Студія</a>
+                         </li>
+                         <li class="page-nav__item">
+                             <a href="./portfolio.html" class="page-nav__link">Портфоліо</a>
+                         </li>
+                         <li class="page-nav__item">
+                             <a href="" class="page-nav__link">Контакти</a>
+                         </li>
+                     </ul>
+                </nav>
                 <ul class="contact">
-                    <li class="contact__item"> 
+                                    <ul class="heade-social">
+                                        <li class="heade-social__item"><a href="#" class="heade-social__link" target="_blank"
+                                                rel="noopener noreferrer">Instagram</a> </li>
+                                        <li class="heade-social__item"><a href="#" class="heade-social__link" target="_blank"
+                                                rel="noopener noreferrer">Twitter</a></li>
+                                        <li class="heade-social__item"><a href="#" class="heade-social__link" target="_blank"
+                                                rel="noopener noreferrer">Facebook</a></li>
+                                        <li class="heade-social__item"><a href="#" class="heade-social__link" target="_blank"
+                                                rel="noopener noreferrer">LinkedIn</a></li>
+                                    </ul>
+                    <li class="contact__item">
                         <a href="mailto:info@devstudio.com" class="contact__link">
                             <svg class="contact__icon contact__icon--mail">
                                 <use href="./images/icons.svg#icon-envelope"></use>
                             </svg>
-                            info@devstudio.com 
+                            info@devstudio.com
                         </a>
                     </li>
                     <li class="contact__item">
-                        <a href="tel:+380961111111" class="contact__link">
+                        <a href="tel:+380961111111" class="contact__link contact__link--tel">
                             <svg class="contact__icon contact__icon--tel">
                                 <use href="./images/icons.svg#icon-smartphone"></use>
                             </svg>
@@ -55,7 +66,7 @@
                         </a>
                     </li>
                 </ul>
-            </div>
+                </div>
         </div>
     </header>
 
@@ -64,7 +75,7 @@
         <!--Герой-->
         <section class="section section__bg-cover">
             <div class="container">
-                <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
+                <h1 class="hero-title">Ефективні рішення для <br> вашого бізнесу</h1>
                 <button type="button" class="btn" data-modal-open>Замовити послугу</button>
             </div>
         </section>
@@ -120,15 +131,28 @@
                 <h2 class="section__title">Чим ми займаємося</h2>
                 <ul class="grid">
                  <li class="gallery-item">
-                    <img src="images/box1.jpg" class="gallery-item__img" alt="Десктопний додаток" width="370">
+                        <picture>
+                            <source srcset="./images/box1.jpg 1x, ./images/box1@2x.jpg 2x" />
+                            <img src="./images/box1.jpg" class="gallery-item__img" alt="Дизайнерське рішення" width="370">
+                        </picture>
+                    
                     <p class="gallery-item__text">Десктопні додатки</p>
                 </li>
                  <li class="gallery-item">
-                    <img src="images/box2.jpg" class="gallery-item__img" alt="Мобільний додаток" width="370">
+
+                        <picture>
+                            <source srcset="./images/box2.jpg 1x, ./images/box2@2x.jpg 2x" />
+                            <img src="./images/box2.jpg" class="gallery-item__img" alt="Мобільний додаток" width="370">
+                        </picture>
+                    
                     <p class="gallery-item__text">Мобільні додатки</p>
                 </li>
-                <li class="gallery-item"> 
-                    <img src="images/box3.jpg" class="gallery-item__img" alt="Дизайнерське рішення" width="370"> 
+                <li class="gallery-item">
+                        <picture>
+                            <source srcset="./images/box3.jpg 1x, ./images/box3@2x.jpg 2x" />
+                            <img src="./images/box3.jpg" class="gallery-item__img" alt="Дизайнерське рішення" width="370">
+                        </picture>
+
                     <p class="gallery-item__text">Дизайнерські рішення</p>
                 </li> 
                 </ul>
@@ -141,9 +165,16 @@
                 <h2 class="section__title">Наша команда</h2>
                 
                 <ul class="grid">
-                    <li class="team-item">
-                        <img src="images/ihor.jpg" 
-                        class="team-item__img" alt="Ігор Дем'яненко" width="270">
+                    <li class="team-item">                       
+
+    <picture>
+        <source srcset="./images/ihor-450.jpg 1x, ./images/ihor-450@2x.jpg 2x" media="(max-width:767px)" />
+        <source srcset="./images/ihor-354.jpg  1x, ./images/ihor-354@2x.jpg 2x" media="(min-width:768px)" />
+        <source srcset="./images/ihor.jpg  1x, ./images/ihor@2x.jpg 2x" media="(min-width:1200px)"/>
+        <img src="./images/ihor-450.jpg" class="team-item__img" alt="Ігор Дем'яненко">
+    </picture>
+
+
                         <div class="team-item__info">
                             <h3 class="team-item__title">Ігор Дем'яненко</h3>
                             <p class="team-item__text">Product Designer</p>
@@ -182,8 +213,17 @@
                 </li>
 
                 <li class="team-item">
-                        <img src="images/olha.jpg" 
-                        class="team-item__img" alt="Ольга Рєпіна" width="270">
+
+<picture>
+    <source srcset="./images/olha-450.jpg 1x, ./images/olha-450@2x.jpg 2x" media="(max-width:767px)" />
+    <source srcset="./images/olha-354.jpg 1x, ./images/olha-354@2x.jpg 2x" media="(min-width:768px)" />
+    <source srcset="./images/olha.jpg 1x, ./images/olha@2x.jpg 2x" media="(min-width:1200px)" />
+<img src="./images/olha-450.jpg" class="team-item__img" alt="Ольга Рєпіна">
+</picture>
+
+                        
+
+
                         <div class="team-item__info">
                             <h3 class="team-item__title">Ольга Рєпіна</h3>
                             <p class="team-item__text">Frontend Developer</p>
@@ -220,8 +260,15 @@
                             </div>
                     </li>
                     <li class="team-item">
-                        <img src="images/mykola.jpg" 
-                        class="tteam-item__img" alt="Микола Тарасов" width="270">
+
+<picture>
+    <source srcset="./images/mykola-450.jpg 1x, ./images/mykola-450@2x.jpg 2x" media="(max-width:767px)" />
+    <source srcset="./images/mykola-354.jpg 1x, ./images/mykola-354@2x.jpg 2x" media="(min-width:768px)" />
+    <source srcset="./images/mykola.jpg 1x, ./images/mykola@2x.jpg 2x" media="(min-width:1200px)" />
+    <img src="./images/mykola-450.jpg" class="tteam-item__img" alt="Микола Тарасов">
+</picture>
+
+
                         <div class="team-item__info">
                             <h3 class="team-item__title">Микола Тарасов</h3>
                             <p class="team-item__text">Marketing</p>
@@ -258,8 +305,15 @@
                         </div>
                     </li>
                     <li class="team-item">
-                        <img src="images/mykhailo.jpg" 
-                        class="team-item__img" alt="Михайло Єрмаков" width="270">
+
+<picture>
+    <source srcset="./images/mykhailo-450.jpg 1x, ./images/mykhailo-450@2x.jpg 2x" media="(max-width:767px)" />
+    <source srcset="./images/mykhailo-354.jpg 1x, ./images/mykhailo-354@2x.jpg 2x" media="(min-width:768px)" />
+    <source srcset="./images/mykhailo.jpg 1x, ./images/mykhailo@2x.jpg 2x" media="(min-width:1200px)" />
+    <img src="./images/mykhailo-450.jpg" class="team-item__img" alt="Михайло Єрмаков">
+</picture>
+
+                        
                         <div class="team-item__info">
                             <h3 class="team-item__title">Михайло Єрмаков</h3>
                             <p class="team-item__text">UI Designer</p>
@@ -300,7 +354,7 @@
         </section>
 
         <!-- Клієнти -->
-        <section class="section">
+        <section class="section hide">
             <div class="container">
                 <h2 class="section__title">Постійні клієнти</h2>
                 <ul class="grid">
@@ -431,7 +485,7 @@
     </footer>
     
 <!-- backdrop -->
-    <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden hede" data-modal>
         <div class="modal">
             <button class="modal__btn-close" data-modal-close>
                 <svg class="modal__btn-close__icon">
@@ -441,7 +495,7 @@
 
            <!-- Форма в модальному вікні -->
 
-            <form class="modal-form">
+            <form class="modal-form hede">
                 <p class="modal-form__title">Залиште свої дані, ми вам передзвонимо</p>
                 
                 <label class="modal-form__item">
@@ -488,6 +542,7 @@
     </div>
 
 <script src="./js/modal.js"></script>
+<script src="./js/mobile-menu.js"></script>
 
 </body>
 </html>

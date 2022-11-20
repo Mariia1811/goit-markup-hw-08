@@ -14,16 +14,22 @@
     <!--Шапка сайту-->
     <header class="header">
         <div class="container header__container">
-            <div class="header-wrap">
     
-                <a class="logo header__logo" href="./index.html">
-                    <span class="logo__el-web">Web</span>Studio
-                </a>
+            <a class="logo header__logo" href="./index.html"><span class="logo__el-web">Web</span>Studio</a>
     
+            <button type="button" class="menu-btn" aria-controls="mobile-menu" aria-expanded="false"
+                aria-controls="menu-container" data-menu-button>
+                <svg class="mob-menu-icon" aria-label="Переключатель мобильного меню">
+                    <use class="icon-close" href="./images/icons.svg#icon-close-black"></use>
+                    <use class="icon-menu" href="./images/icons.svg#icon-menu"></use>
+                </svg>
+            </button>
+    
+            <div class="mobile-menu" id="mobile-menu" data-menu>
                 <nav class="page-nav">
                     <ul class="page-nav__list">
                         <li class="page-nav__item">
-                            <a href="./index.html" class="page-nav__link">Студія</a>
+                            <a href="./index.html" class="page-nav__link ">Студія</a>
                         </li>
                         <li class="page-nav__item">
                             <a href="./portfolio.html" class="page-nav__link page-nav__link--current">Портфоліо</a>
@@ -33,11 +39,17 @@
                         </li>
                     </ul>
                 </nav>
-    
-            </div>
-    
-            <div class="header-wrap">
                 <ul class="contact">
+                    <ul class="heade-social">
+                        <li class="heade-social__item"><a href="#" class="heade-social__link" target="_blank"
+                                rel="noopener noreferrer">Instagram</a> </li>
+                        <li class="heade-social__item"><a href="#" class="heade-social__link" target="_blank"
+                                rel="noopener noreferrer">Twitter</a></li>
+                        <li class="heade-social__item"><a href="#" class="heade-social__link" target="_blank"
+                                rel="noopener noreferrer">Facebook</a></li>
+                        <li class="heade-social__item"><a href="#" class="heade-social__link" target="_blank"
+                                rel="noopener noreferrer">LinkedIn</a></li>
+                    </ul>
                     <li class="contact__item">
                         <a href="mailto:info@devstudio.com" class="contact__link">
                             <svg class="contact__icon contact__icon--mail">
@@ -47,7 +59,7 @@
                         </a>
                     </li>
                     <li class="contact__item">
-                        <a href="tel:+380961111111" class="contact__link">
+                        <a href="tel:+380961111111" class="contact__link contact__link--tel">
                             <svg class="contact__icon contact__icon--tel">
                                 <use href="./images/icons.svg#icon-smartphone"></use>
                             </svg>

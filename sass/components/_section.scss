@@ -1,22 +1,45 @@
 .section {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
     text-align: center;
 
+  @media screen and (min-width:1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+     
 
  &:nth-child(2n+4) {
     background-color: var(--color-section);
  }
 
  &__title {
-    margin-bottom: 50px;
-    font-size: 36px;
+    margin-bottom: 30px;
+    font-size: 28px;
     line-height: 1.17;
  }
 }
 
+ @media screen and (min-width: 1200px) {
+  .section__title {
+      margin-bottom: 50px;
+      font-size: 36px;
+  }
+ }
+
 .container {
-   max-width: 1200px;
    padding: 0 15px;
    margin: 0 auto;
+
+  @media screen and (max-width: 767px) {
+    max-width: 480px;
+  }
+
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 1200px;
+  }
 }

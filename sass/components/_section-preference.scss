@@ -1,7 +1,18 @@
 
 .preference-item {
-    max-width: 270px;
     text-align: left;
+    width: 100%;
+    max-width: 450px;
+    align-items: center;
+
+    @media screen and (min-width:768px) {
+       flex-basis: calc(100% - 30px) / 2;
+       max-width: 354px;
+    }
+    @media screen and (min-width:1200px) {
+        flex-basis: calc(100% - 90px) / 4;
+        max-width: 270px;
+    }
 }
 
 .preference-img {
@@ -21,6 +32,10 @@
 .preference-title {
     margin-bottom: 10px;
     font-size: 14px;
+    
+    @media screen and (max-width:767px) {
+        text-align: center;
+    }
 }
 
 .preference-text {
