@@ -1,7 +1,7 @@
 .costomer-el__link {
     display: flex;
     justify-content: center;
-    min-width: 170px;
+    width: 100%;
     padding: 15px 0;
 
     border: 1px solid var(--color-costomer);
@@ -23,13 +23,19 @@
     height: 60px;
     fill: currentColor;
 }
-@media screen and (max-width:767px) {
-.costomer-el__link{
-    min-width: 210px;
-}
+
+@media screen and (max-width:768px) {
+    .costomer-el {
+        min-width: 210px;
+    }
 }
 @media screen and (max-width:1199px) {
-    .costomer-el__link {
+    .costomer-el {
         min-width: 226px;
+    }
+}
+@media screen and (min-width:1199px) {
+    .costomer-el {
+        min-width: 170px;
     }
 }
