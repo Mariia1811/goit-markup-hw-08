@@ -13,25 +13,24 @@
     color: var(--accent-color);
 }
 }
-@media screen and (max-width: 480px){
-.logo:hover,
-.logo:focus {
-        color: var(--accent-color);
-    }
-}
+
 
 
 @media screen and (min-width: 1200px) {
     .logo {
         font-size: 26px;
         line-height: 1.19;
-    }
-   
+    } 
 }
  
-
 .header__logo {
+@media screen and (min-width:768px) {
+        margin-right: 87px;
+    }
+
+@media screen and (min-width:1200px) {
     margin-right: 93px;
+    }
 }
 
 .footer__logo {

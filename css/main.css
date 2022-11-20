@@ -663,20 +663,21 @@ img {
   color: var(--accent-color);
 }
 
-@media screen and (max-width: 480px) {
-  .logo:hover,
-.logo:focus {
-    color: var(--accent-color);
-  }
-}
 @media screen and (min-width: 1200px) {
   .logo {
     font-size: 26px;
     line-height: 1.19;
   }
 }
-.header__logo {
-  margin-right: 93px;
+@media screen and (min-width: 768px) {
+  .header__logo {
+    margin-right: 87px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__logo {
+    margin-right: 93px;
+  }
 }
 
 .footer__logo {
@@ -782,10 +783,15 @@ img {
 }
 
 .btn__icon {
-  margin-left: 10px;
+  margin-left: 12px;
   width: 24px;
   height: 24px;
   fill: currentColor;
+}
+@media screen and (min-wadth: 1200px) {
+  .btn__icon {
+    margin-left: 10px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1018,4 +1024,152 @@ img {
   .costomer-el__link {
     min-width: 226px;
   }
+}
+.footer {
+  background-color: var(--bcg-footer);
+  padding: 60px 15px;
+}
+
+.footer__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  gap: 60px;
+}
+@media screen and (max-width: 767px) {
+  .footer__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__container {
+    gap: 70px;
+  }
+}
+
+.address__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 8px;
+}
+
+@media screen and (min-width: 1200px) {
+  .address__list {
+    gap: 9px;
+  }
+}
+.address__link {
+  display: inline-block;
+  min-width: 230px;
+  font-style: normal;
+  line-height: 1.71;
+  color: var(--color-transparency);
+  text-decoration: none;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.address__link--white {
+  color: var(--white-color);
+}
+.address__link:hover, .address__link:focus {
+  color: var(--accent-color);
+}
+
+.footer-wrap__title {
+  display: block;
+  margin-bottom: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--white-color);
+}
+
+.form-field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 12px;
+}
+@media screen and (max-width: 1199px) {
+  .form-field {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 20px;
+  }
+}
+.form-field__label {
+  display: block;
+  max-width: 358px;
+  width: 100%;
+}
+.form-field__input {
+  display: block;
+  min-width: 358px;
+  width: 100%;
+  padding: 16px;
+  color: var(--white-color);
+  background-color: transparent;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  outline: none;
+}
+.form-field__input::-webkit-input-placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: var(--color-transparency);
+}
+.form-field__input::-moz-placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: var(--color-transparency);
+}
+.form-field__input:-ms-input-placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: var(--color-transparency);
+}
+.form-field__input::-ms-input-placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: var(--color-transparency);
+}
+.form-field__input::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: var(--color-transparency);
 }/*# sourceMappingURL=main.css.map */
