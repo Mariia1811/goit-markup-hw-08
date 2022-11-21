@@ -145,7 +145,7 @@ position: relative;
 
 @media screen and (min-width: 768px) {
     .contact__link{
-        padding: 10px;
+        padding: 5px;
         font-size: 12px;
         line-height: 1.17;
     }
@@ -278,5 +278,6 @@ outline: none;
 @media screen and (min-width:1200px) {
     .contact-wrap{
         display: flex;
+        gap: 30px;
     }
 }

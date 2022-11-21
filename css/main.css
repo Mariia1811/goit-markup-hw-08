@@ -359,9 +359,9 @@ img {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 30px;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .header {
@@ -520,7 +520,7 @@ img {
 }
 @media screen and (min-width: 768px) {
   .contact__link {
-    padding: 10px;
+    padding: 5px;
     font-size: 12px;
     line-height: 1.17;
   }
@@ -668,6 +668,7 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    gap: 30px;
   }
 }
 .logo {
