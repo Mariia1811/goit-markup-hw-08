@@ -95,6 +95,7 @@ position: relative;
 } 
  @media screen and (min-width: 1200px) {
      .contact {
+        flex-wrap: nowrap;
         flex-direction: row;
         align-content: center;
         gap: 30px;
@@ -265,6 +266,10 @@ outline: none;
         flex-grow: 1;
     }
 }
-
+@media screen and (min-width:1200px) {
+    .contact-wrap{
+        display: flex;
+    }
+}
 
 
