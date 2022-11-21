@@ -136,6 +136,7 @@ position: relative;
     color: var(--accent-color);
    }
 }
+
 @media screen and (max-width:377px) {
     .contact__link--tel {
         font-size: 24px;
@@ -148,6 +149,13 @@ position: relative;
         padding: 5px;
         font-size: 12px;
         line-height: 1.17;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .contact__link {
+        font-size: 14px;
+        line-height: 1.14;
     }
 }
 
