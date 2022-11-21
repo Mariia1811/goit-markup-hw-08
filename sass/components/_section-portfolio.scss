@@ -1,13 +1,28 @@
 .filter-list {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    
     gap: 8px;
     margin-bottom: 50px;
 }
 
-.portfolio-card {
-    max-width: 370px;
+@media screen and (min-width:768px) {
+.filter-list{
+    justify-content: center;
 }
+}
+
+.portfolio-item {
+    max-width: 450px;
+    @media screen and (min-width:768px) {
+        max-width: 338px;
+    }
+        @media screen and (min-width:1200px) {
+            max-width: 370px;
+        }
+}
+
 
 .portfolio-card__link {
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -56,6 +71,7 @@
     text-align: left;
     border: 1px solid var(--color-border-portfolio);
     border-top: none;
+    height: 100%;
 }
 
 .portfolio-card__title {
