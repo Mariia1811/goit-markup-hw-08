@@ -83,8 +83,13 @@
     justify-content: center;
     align-items: center;
 
-    line-height: 1.71;
+    font-size: 12px;
+    line-height: 1.14;
     color: var(--text-color);
+    @media screen and (min-width:1200px) {
+    font-size: 14px;
+        line-height: 1.71;
+    }
 }
 
 .modal-form__input-chechbox {
@@ -99,7 +104,7 @@
 }
 
 .modal-form__icon-check {
-    display: inline-block;
+    display: block;
     width: 16px;
     height: 15px;
     margin-right: 7px;
