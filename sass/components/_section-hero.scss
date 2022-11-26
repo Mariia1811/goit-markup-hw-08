@@ -1,5 +1,5 @@
 .section__bg-cover{
-    max-width: 480px;
+    max-width: 320px;
     margin-left: auto;
     margin-right: auto;
     padding: 118px 0px;
@@ -33,7 +33,7 @@
     }
 }
 
-@media screen and (min-width:1200px) {
+@media screen and (min-width:1280px) {
     .section__bg-cover {
         max-width: 1600px;
         padding: 200px 0;
@@ -63,7 +63,7 @@
     color: var(--white-color);
 }
 
-@media screen and (min-width:1200px) {
+@media screen and (min-width:1280px) {
   .hero-title{
    font-size: 44px;
    line-height: 1.366;  
